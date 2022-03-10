@@ -1,0 +1,30 @@
+package java_new;
+
+import java.util.Arrays;
+
+public class java12t {
+	
+	static void isanagram(String str1, String str2) {
+		boolean isana=true;
+		if(str1.length()!=str2.length()){
+		  isana=false;
+		}
+		else{
+			
+			char[]s1=str1.toCharArray();
+			char[]s2=str2.toCharArray();
+			Arrays.sort(s1);
+			Arrays.sort(s2);
+			
+			isana= Arrays.equals(s1,s2);
+			System.out.println(isana);
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	   isanagram("india","diani");
+	}
+	    
+
+	}
